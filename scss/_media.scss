@@ -1,0 +1,225 @@
+/* media -------------------------- */
+/* Responsive all mobile sizes */
+@media (max-width: 986px) {
+    .newsletter-form {
+       
+    }
+    .newsletter-title {
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    .header-img {
+        display: none;
+    }
+    .header-wrapper {
+        padding-top: 0;
+        max-width: none;
+    }
+    header {
+        text-align: center;
+        font-size: 19px;
+        line-height: 28px;
+        h1 {
+            font-size: 46px;
+            line-height: 52px;
+        }
+        .buttons-wrapper {
+            .button {
+                margin-bottom: 20px;
+            }
+        }
+        .subMenu{
+            height: 100px;
+            .inner{
+
+                #sTop{
+                    padding-top:12px;
+                }
+
+
+                .menu-item{
+                    position:relative;
+                    display:block;
+                    text-align: right;
+                    line-height: 22px;
+                    top:0px;
+                    padding-top: 0px;
+                }
+                .social-icon{
+                    line-height: 22px;
+                    top: 0px;
+                    padding-top:0px;
+                }
+            }
+        }
+    }
+    .promo-column {
+        width: auto;
+        max-width: 290px;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        text-align: center;
+        img {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    .simple-content {
+        float: none;
+        width: auto;
+        padding-top: 0;
+        h3 {
+            font-size: 36px;
+            line-height: 46px;
+            text-align: center;
+        }
+        ul {
+            max-width: 310px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    .simple-img {
+        float: none;
+        width: auto;
+        max-width: none;
+        margin-left: -80px;
+        margin-right: -80px;
+    }
+    .comments {
+        .box {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .tab-prev,
+        .tab-next {
+            display: none;
+        }
+    }
+    .social-list {
+        li {
+            float: none;
+            text-align: center;
+            padding-top: 20px;
+            &:first-child {
+                padding-top: 0;
+            }
+            a {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+    .video-title {
+        font-size: 36px;
+        line-height: 46px;
+    }
+    .discover-content {
+        float: none;
+        width: auto;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+        h2 {
+            font-size: 60px;
+            line-height: 60px;
+        }
+    }
+    .discover-img {
+        float: none;
+        width: auto;
+        img {
+            margin: 0 auto;
+        }
+    }
+    .discover-button {
+        text-align: center;
+        .button-download {
+            float: none;
+            display: inline-block;
+        }
+    }
+    .comments .tabs li {
+        width: 18px;
+        height: 18px;
+        margin: 0 14px;
+    }
+}
+/* Responsive all mobile sizes */
+@media (max-width: 656px) {
+    header{
+        .subMenu{
+            height: 200px;
+
+            .inner{
+                text-align: center;
+                margin: 0 auto;
+                width: 320px;
+
+                .menu-item{
+                    text-align: center;
+                    line-height: 30px;
+                }
+
+                .social-icon{
+                    line-height: 30px;
+                    padding-right: 20px;
+                }
+            }
+        }
+    }
+
+
+
+
+}
+/* Responsive just mobile portrait */
+@media (max-width: 479px) {
+    header {
+        .buttons-wrapper {
+            .button {
+                &.button-stripe {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+    .discover-content {
+        h2 {
+            font-size: 36px;
+            line-height: 46px;
+        }
+    }
+    .newsletter-form{
+    
+    }
+
+
+    .illustration-block{
+        padding: 0 0 10px 0;
+        text-align:center;
+        float: none;
+        max-width:none;
+    }
+    .illustration-title {
+        font:bold 24px/24px $fontCaption;
+        text-align: center;
+        
+    }
+}
+@media only screen and (-webkit-min-device-pixel-ratio:2),
+only screen and (min--moz-device-pixel-ratio:2),
+only screen and (-o-min-device-pixel-ratio:2/1),
+only screen and (min-device-pixel-ratio:2),
+only screen and (min-resolution:192dpi),
+only screen and (min-resolution:2dppx){
+    %sprite,
+    .comments .tab-prev,
+    .comments .tab-next,
+    .button-download:after {
+      background: url(../images/sprite@2x.png) 0 0 no-repeat;
+      @include bgsize(#{200px 50px});
+    }
+}

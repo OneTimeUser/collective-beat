@@ -1,0 +1,80 @@
+/* header -------------------------- */
+header {
+    
+    font: 24px/36px $fontCaption;
+    color: $white;
+    @include bgsize;
+    @include sizing;
+    h1 {
+        font-size: 60px;
+        line-height: 60px;
+        font-weight: $f-medium;
+        margin-bottom: 38px;
+        span {
+            font-weight: $f-extra-light;
+        }
+    }
+    .autor {
+        padding: 12px 0 0;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: bold;
+        color: $white;
+        a {
+            color: $white;
+            &:hover {
+                color: $white;
+                @include opacity(0.8);
+            }
+            &:active {
+                color: $white;
+                @include opacity(1);
+            }
+        }
+    }
+    .buttons-wrapper {
+        padding-top: 53px;
+        .button-stripe {
+            margin-left: 14px;
+        }
+    }
+    .subMenu{
+        height:66px;
+        background-color: $white;
+        width: 100%;
+        box-shadow: 0px 3px 5px #666666;
+        z-index: 9999;
+        .inner {
+            text-align: right;
+            a{
+                font-size: 14px;
+                font-weight: $f-demi-bold;
+                padding-right: 11px;
+            }
+
+            #sTop{
+                float: left;
+                padding-left: 10px;
+            }
+
+            .menu-item{
+                padding-top: 10px;
+                position:relative;  
+                top:30px;
+            }
+
+            .social-icon{
+                padding-top: 5px;
+                position:relative;
+                top:17px;
+            }
+
+        }
+    }
+}
+
+.header-wrapper {
+    
+    max-width: 655px;
+    
+}
